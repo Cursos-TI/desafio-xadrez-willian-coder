@@ -8,7 +8,7 @@ int main()
 
   for (int i = 1; i <= 5; i++)
   {
-    printf("Torre -> Casa %d: Direita\n\n", i);
+    printf("Direita\n");
   }
 
   // bispo diagonal 5 casas cima e direita
@@ -17,7 +17,7 @@ int main()
   int i = 1;
   while (i <= 5)
   {
-    printf("Bispo -> Casa %d: Cima, Direita\n\n", i);
+    printf("Cima Direita\n");
     i++;
   }
 
@@ -27,9 +27,23 @@ int main()
   int r = 1;
   do
   {
-    printf("Rainha -> Casa %d: Esquerda\n\n", r);
+    printf("Esquerda\n");
     r++;
 
   } while (r <= 8);
+
+  // cavalo duas casas baixo e uma esquerda
+  printf("\n=== Movimento do cavalo ===\n");
+  for (int i = 1; i <= 1; i++)
+  {
+    int movimento = 1;
+
+    while (movimento <= 2)
+    {
+      printf("(Baixo)\n", movimento++);
+    }
+    printf("(Esquerda)\n");
+  }
+
   return 0;
 }
